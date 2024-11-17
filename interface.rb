@@ -8,7 +8,7 @@ class Interface
       puts 'Sorry, input not recognized'
       coords = prompt_user
     end
-    coords
+    coords.map { |val| val - 1 }
   end
 
   def self.prompt_user
